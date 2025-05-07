@@ -1,12 +1,11 @@
-package OperacoesBasicas;
+package List;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ListaTarefa {
-
 	private List<Tarefa> tarefaList;
-
+	
 	public ListaTarefa() {
 		this.tarefaList = new ArrayList<>();
 	}
@@ -20,8 +19,7 @@ public class ListaTarefa {
 			for(Tarefa t : tarefaList) {
 				if (t.getDescricao().equalsIgnoreCase(descricao));
 				tarefasParaRemover.add(t);
-			}
-			
+			}			
 			tarefaList.removeAll(tarefasParaRemover);
 	}
 	
@@ -35,7 +33,7 @@ public class ListaTarefa {
 	
 	public static void main(String[] args) {
 		ListaTarefa  listaTarefa = new ListaTarefa();
-		 System.out.println("O número total de elementos na lista é: " + listaTarefa.obterNumeroTotalTarefas());
+		 System.out.println("O número total de elementos na lista é: " + listaTarefa.obterNumeroTotalTarefas());		 
 	}
 }
 
